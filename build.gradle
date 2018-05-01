@@ -1,0 +1,18 @@
+group 'com.example'
+version '1.0.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'https://paladin-framework.github.io'
+    }
+}
+
+dependencies {
+    compile 'fr.litarvan.paladin:paladin:0.0.1'
+}
