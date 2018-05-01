@@ -9,7 +9,7 @@ repositories {
     mavenCentral()
 
     maven {
-        url 'https://paladin-framework.github.io'
+        url 'https://paladin-framework.github.io/maven'
     }
 }
 
