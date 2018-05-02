@@ -22,7 +22,9 @@ group '/auth', { // Same as defining a /auth/login and /auth/logout routes
     post '/logout', [
         action: 'auth' // Or this too
     ]
-}
+}, [
+    middleware: ['example'] // Will apply the route middleware 'example' defined in app.config.groovy on all the group routes
+]
 
 get '/version', { // This works too
     MyProject.VERSION

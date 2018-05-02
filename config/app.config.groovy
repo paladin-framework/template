@@ -1,5 +1,4 @@
 import com.example.myproject.http.*
-
 /**
  * The Application Configuration
  *
@@ -15,5 +14,20 @@ import com.example.myproject.http.*
     controllers: [
         hello: HelloController,
         auth: AuthController
+    ],
+
+    /**
+     * Route middlewares (applied on selected routes in /routes.groovy )
+     */
+    routeMiddlewares: [
+        example: ExampleMiddleware
+    ],
+
+    /**
+     * Global middlewares (applied on all routes)
+     */
+    globalMiddlewares: [
+        // Remove comment if you want your API to be callable from any website
+        // AcceptCrossOriginRequestsMiddleware
     ]
 ]
