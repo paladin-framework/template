@@ -8,8 +8,7 @@ public class Main
     public static void main(String[] args)
     {
         Paladin paladin = PaladinBuilder.create(MyProject.class)
-                .setConfigFolder("config/")
-                .setRoutesFile("/routes.groovy")
+                .loadCommandLineArguments(args)
                 .build();
 
         paladin.start();

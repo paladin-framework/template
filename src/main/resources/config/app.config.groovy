@@ -1,4 +1,7 @@
 import com.example.myproject.http.*
+
+import java.util.concurrent.TimeUnit
+
 /**
  * The Application Configuration
  *
@@ -8,6 +11,8 @@ import com.example.myproject.http.*
  */
 
 [
+    sessionDuration: TimeUnit.DAYS.toMillis(61), // 2 Months
+
     /**
      * The app controllers, call them whatever you want to
      */

@@ -14,14 +14,14 @@ class ExampleMiddleware extends Middleware
     private static final Logger log = LoggerFactory.getLogger("ExampleMiddleware")
 
     @Override
-    def before(BeforeEvent event, Request request, Response response, Route route)
+    void before(BeforeEvent event, Request request, Response response, Route route)
     {
         log.info("Calling ${request.method} ${request.uri}")
         // You can cancel function using event.cancelled = true and event.result = 'New result'
 ;    }
 
     @Override
-    def after(AfterEvent event, Request request, Response response, Route route)
+    void after(AfterEvent event, Request request, Response response, Route route)
     {
         log.info("Called ${request.method} ${request.uri}")
         // You can edit the result using event.result

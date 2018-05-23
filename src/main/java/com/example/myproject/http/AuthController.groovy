@@ -13,7 +13,7 @@ class AuthController extends Controller
     @Inject
     private AuthService auth;
 
-    @RequestParams(['username', 'password']) // Request params must be method first arguments
+    @RequestParams(required = ['username', 'password']) // Request params must be method first arguments
     def login(String username, String password, Session session /* Automatically created and injected */ )
     {
         def user = auth.login(username, password)

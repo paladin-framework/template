@@ -1,3 +1,5 @@
+package config
+
 import com.example.myproject.MyProject
 import com.example.myproject.http.AuthController
 
