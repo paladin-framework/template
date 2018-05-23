@@ -14,6 +14,5 @@ repositories {
 }
 
 dependencies {
-    compile 'fr.litarvan.paladin:paladin-framework:0.0.2'
-    compile 'net.sf.jopt-simple:jopt-simple:4.9'
+    compile 'fr.litarvan.paladin:paladin-framework:1.0.0'
 }
